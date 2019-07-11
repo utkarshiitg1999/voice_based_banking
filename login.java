@@ -1,29 +1,17 @@
 package com.example.cmbuser.bank;
-
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
-
-import java.util.List;
 public class login extends AppCompatActivity {
     public EditText username,password;
     public Button login,exit;
     public TextView warning;
-//login l=new login();
     @Override
     public void onBackPressed() {
-        // Do Here what ever you want do on back press;
     }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,9 +21,6 @@ public class login extends AppCompatActivity {
         login = (Button)findViewById(R.id.b1);
         exit=findViewById(R.id.ba);
         warning=(TextView)findViewById(R.id.tv1);
-        //username.setVisibility(View.VISIBLE);
-        //warning.setVisibility(View.VISIBLE);
-
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,15 +28,11 @@ public class login extends AppCompatActivity {
                 System.exit(0);
             }
         });
-
-
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 check(username.getText().toString(),password.getText().toString());
-
-
-            }
+                            }
         });
     }
     public void check(String a,String b)
