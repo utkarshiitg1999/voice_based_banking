@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="247dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="264dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="32dp"
+        android:ems="20"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:password="true"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="LOGIN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="225dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#D80909"
+        android:text="   Incorrect Credentials !"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="276dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="  Welcome to Voice Banking App!"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/et1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <Button
+        android:id="@+id/ba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Exit"
+        android:textColor="#E01808"
+        android:textSize="18sp"
+        android:theme="@style/Base.DialogWindowTitle.AppCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.158" />
+
+</android.support.constraint.ConstraintLayout>

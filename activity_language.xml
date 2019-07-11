@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:text="हिंदी"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b2" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="172dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:text="বাংলা"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b3" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="172dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:text=" English"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="324dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="Please select your language \n       कृपया अपनी भाषा चुनें। \n   আপনার ভাষা নির্বাচন করুন."
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Constraints
+        android:id="@+id/constraints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

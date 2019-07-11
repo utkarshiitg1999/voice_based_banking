@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPr"
+    android:padding="12dp"
+    tools:context=".english">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="399dp"
+        android:layout_height="713dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="15dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="476dp"
+            android:text="Wrong Command! Please try again."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#7A0020"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="372dp"
+            android:text="  Try the following commands..."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="216dp"
+        android:text='1)"show me the balance"\n2)"show mini statement"\n3)"show passbook"\n4)"Transfer money"\n5)"logout !"'
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:hint="You will see input here"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#000000" />
+
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="87dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background" />
+
+</RelativeLayout>
